@@ -1,0 +1,61 @@
+.mob-nav__open,
+.mob-nav__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    top: 2.8rem;
+    right: 3.8rem;
+    z-index: 2500;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    background-color: #7ab9f0;
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+
+.mob-nav__icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    fill: var(--color-grey-light-1);
+}
+
+.mob-nav {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.85);
+    transform: translateX(100%);
+    transition: all 0.5s;
+
+    &.open {
+        transform: translateX(0);
+    }
+
+    &__navi {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        &-item {
+            &:link,
+            &:visited {
+                font-size: 2.4rem;
+                color: var(--color-grey-dark-1);
+                display: inline-block;
+                padding-bottom: 1rem;
+                transition: all 0.3s;
+                backface-visibility: hidden;
+            }
+
+            &:hover {
+                color: var(--color-main);
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.testimonials {
+    padding: 0 4.8rem;
+
+    &__flex {
+        gap: 3.2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__box {
+        border: 1px solid var(--color-grey-light-3);
+        border-radius: 8px;
+        box-shadow: 0 1rem 2rem rgba(0,0, 0, .1);
+        padding: 4.8rem 3.2rem;
+        transition: all .3s;
+        
+        &:hover {
+            transform: translateY(-2rem);
+        }
+
+        
+    }
+
+    &__stars {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.4rem;
+    }
+
+    &__star {
+        height: 2rem;
+        width: 2rem;
+        fill: var(--color-main);
+    }
+
+    &__name {
+        display: inline-block;
+        margin-bottom: 1.4rem;
+        color: var(--color-grey-dark-1);
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    &__desc {
+        line-height: 1.8;
+        font-size: 1.4rem;
+    }
+}

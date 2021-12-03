@@ -1,0 +1,35 @@
+.cookie-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-grey-dark-1);
+    padding: 1.6rem 3.2rem;
+    z-index: 1000;
+    animation: moveInBottom 0.5s;
+    transition: all 0.3s;
+
+    &__text {
+        margin-right: auto;
+        // font-size: 1.8rem;
+        color: var(--color-grey-light-1);
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btns {
+        display: flex;
+        gap: 1.6rem;
+
+        .btn {
+            padding: 1rem 3rem;
+            font-size: 1.4rem;
+        }
+        .btn--outline {
+            color: #fff;
+        }
+    }
+}

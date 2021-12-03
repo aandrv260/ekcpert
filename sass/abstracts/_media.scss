@@ -1,0 +1,407 @@
+@media (max-width: 80.75em) {
+    .heading-primary {
+        font-size: 3.8rem;
+    }
+
+    .heading-secondary {
+        font-size: 3.8rem;
+    }
+
+    .heading-tertiary {
+        font-size: 2.4rem;
+    }
+
+    .stats {
+        &__icon {
+            height: 2.8rem;
+            width: 2.8rem;
+        }
+
+        &__text {
+            font-size: 2rem;
+        }
+    }
+
+    // .hero-desc {
+    //     font-size: 1.6rem;
+    // }
+
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media (max-width: 67.5em) {
+    // .heading-primary {
+    //     font-size: 4.2rem;
+
+    // }
+
+    html {
+        font-size: 50%;
+    }
+
+    .heading-tertiary {
+        font-size: 2.2rem;
+    }
+
+    .heading-primary {
+        font-size: 3.4rem;
+    }
+
+    .cookie-bar {
+        &__flex {
+            // flex-wrap: wrap;
+            // justify-content: space-between;
+            // justify-items: flex-end;
+            // gap: 1.6rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        &__text {
+            margin: 0;
+        }
+
+        &__btns {
+            justify-self: end;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .cookie-bar {
+        &__flex {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 50.62em) {
+    // 810px
+    .heading-primary {
+        font-size: 2.8rem;
+    }
+
+    .heading-secondary {
+        font-size: 3.2rem;
+    }
+
+    .heading-tertiary {
+        font-size: 2rem;
+    }
+
+    .hero-desc {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+    }
+
+    .section-hero {
+        padding: 4.8rem 3.2rem;
+    }
+
+    .testimonials {
+        padding: 0 3.2rem;
+
+        &__flex {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 4.8rem;
+        }
+
+        &__box {
+            &--3 {
+                grid-column: 1 / -1;
+            }
+        }
+    }
+
+    .stats {
+        // &__flex {
+        //     display: grid;
+        //     grid-template-columns: repeat(2, 1fr);
+        //     row-gap: 3.2rem;
+        // }
+
+        // &__stat--3 {
+        //     grid-column: 1 / -1;
+        // }
+
+        &__stat {
+            flex-direction: column;
+        }
+    }
+
+    .cta {
+        &__left-col {
+            flex: 1;
+        }
+        &__right-col {
+            display: none;
+        }
+    }
+
+    .location {
+        &__flex {
+            flex-direction: column-reverse;
+        }
+
+        &__map {
+            align-self: stretch;
+        }
+    }
+}
+
+@media (max-width: 41.87em) {
+    // 670px
+
+    .cookie-bar {
+        padding: 1.6rem 2.4rem;
+        &__text {
+            font-size: 1.4rem;
+        }
+    }
+
+    .mob-nav__open,
+    .mob-nav__close {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mob-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts-header__nav {
+        display: none;
+    }
+
+    .contacts-header__heading-box {
+        top: 60%;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        gap: 3.2rem;
+
+        a {
+            margin: 0 auto;
+        }
+    }
+
+    .location {
+        padding: 0 1.8rem;
+    }
+
+    .heading-tertiary {
+        font-size: 1.8rem;
+    }
+
+    .benefits {
+        &__desc {
+            font-size: 1.4rem;
+        }
+    }
+
+    // TODO: Watch the video about mobile navigation and do it here
+    .header__nav-list {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        &__btns {
+            justify-content: center;
+            margin-bottom: 6.4rem;
+        }
+    }
+
+    .text-box {
+        text-align: center;
+    }
+
+    .img-box {
+        width: 70%;
+    }
+
+    .stats {
+        &__flex {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 2.4rem;
+        }
+
+        &__stat:last-child {
+            grid-column: 1 / -1;
+            justify-self: center;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+        }
+
+        &__icon {
+            height: 2.4rem;
+            width: 2.4rem;
+        }
+    }
+
+    .steps {
+        &__flex {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3.2rem;
+        }
+
+        &__col:last-child {
+            grid-column: 1 / -1;
+            justify-self: center;
+        }
+    }
+
+    .cta__description {
+        font-size: 1.4rem;
+    }
+
+    .form {
+        &__input-conts {
+            flex-direction: column;
+        }
+        &__input,
+        &__textarea {
+            font-size: 1.6rem;
+        }
+    }
+
+    .section-cta {
+        padding: 9.8rem 1.2rem 12.8rem;
+    }
+
+    .cta__left-col {
+        padding: 4.8rem 3.2rem;
+    }
+
+    .footer {
+        &__flex {
+            flex-direction: column-reverse;
+        }
+
+        &__link {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .cookie-bar {
+        &__flex {
+            row-gap: 2.4rem;
+        }
+        &__text {
+            grid-column: 1 / -1;
+        }
+
+        &__btns {
+            grid-row: 2;
+            grid-column: 1 / -1;
+            justify-content: space-between;
+            justify-self: center;
+
+            .btn {
+                padding: 1rem 2.4rem;
+            }
+        }
+    }
+
+    .benefits {
+        &__flex {
+            grid-template-columns: 1fr;
+        }
+
+        &__img-box {
+            grid-row: 1;
+        }
+    }
+
+    .hero {
+        &__btns {
+            flex-direction: column;
+        }
+    }
+
+    .img-box {
+        display: none;
+    }
+
+    .steps {
+        &__flex {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .testimonials {
+        &__flex {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .stats {
+        &__flex {
+            grid-template-columns: 1fr;
+            // justify-items: center
+
+            // TODO: Think of a fix of how this looks
+        }
+    }
+
+    .footer {
+        &__flex {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            gap: 4.8rem;
+        }
+
+        &__list {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.4rem;
+            padding: 0 1.6rem;
+        }
+
+        &__copy-text {
+            align-self: flex-start;
+        }
+
+        &__link {
+            font-size: 1.2rem;
+        }
+
+        &__copy-text {
+            align-self: center;
+        }
+    }
+
+    .mob-nav__open,
+    .mob-nav__close {
+        top: 3.6rem;
+    }
+
+    .mob-nav {
+        &__icon {
+            height: 2.8rem;
+            width: 2.8rem;
+        }
+    }
+
+    .btn-back-to-top {
+        height: 4.8rem;
+        width: 4.8rem;
+        font-size: 2.8rem;
+    }
+}

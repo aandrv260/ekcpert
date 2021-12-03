@@ -1,0 +1,32 @@
+.footer {
+    background-color: var(--color-grey-dark-1);
+    color: #fff;
+    padding: 3.2rem 0;
+    font-size: 1.7rem;
+
+    &__flex {
+        gap: 3.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__copy-text {
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        gap: 3.2rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: inherit;
+        transition: all .3s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        color: var(--color-main-light-2);
+    }
+}

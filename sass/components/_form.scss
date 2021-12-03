@@ -1,0 +1,106 @@
+.cta {
+    // height: 50rem;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2.4rem 2.4rem rgba(0,0,0,.3);
+    color: var(--color-dark);
+
+    // background-image: linear-gradient(to right top, var(--color-main), var(--color-main-light-2));
+
+    &__description {
+        margin-bottom: 3.2rem;
+        line-height: 1.8;
+        width: 99%;
+        // font-size: 1.4rem;
+    }
+
+    & > * {
+        color: inherit;
+    }
+
+    .subtitle {
+        margin-bottom: 1rem;
+    }
+
+    &__left-col {
+        flex: 0 0 65%;
+        padding: 4.8rem 6.4rem 4.8rem;
+    }
+
+    &__right-col {
+        background-image: linear-gradient(rgba(7, 28, 46, .5), rgba(7, 28, 46, .5)), url(../../img/test.jpg);
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+    }
+   
+}
+
+.form {
+    // width: 80%;
+
+    &__label {
+        display: block;
+        margin-bottom: 1.6rem;
+        margin-left: .3rem;
+        display: none;
+    }
+
+    &__input,
+    &__select {
+        font-family: inherit;
+        font-size: 1.8rem;
+        padding: 1rem 1.6rem;
+        width: 100%;
+        border: none;
+        background-color: var(--color-grey-light-2);
+        border-radius: 8px;
+
+        &::placeholder {
+        color: inherit;
+
+        }
+
+    }
+
+
+    &__inp-cont {
+        flex: 0 0 48%;
+    }
+
+    &__input-conts {
+        display: flex;
+        gap: 1.6rem;
+        margin-bottom: 2.4rem;
+    }
+
+    &__textarea {
+        border: none;
+        background-color: var(--color-grey-light-2);
+        width: 98%;
+        font-family: inherit;
+        font-size: 1.8rem;
+        border-radius: 8px;
+        padding: .8rem 1.6rem;
+        margin-bottom: 1.6rem;
+
+        &::placeholder {
+            color: inherit;
+
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+
+
+    }
+}
+
+.btn-form {
+    background-color: #64aeee;
+     color: #fff;
+     font-size: 1.8rem;
+}

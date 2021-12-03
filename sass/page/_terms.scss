@@ -1,0 +1,47 @@
+.terms,
+.blog {
+    width: 70%;
+    padding: 4.8rem 0;
+
+    h3 {
+        &:not(:first-child) {
+            margin-top: 2.4rem;
+        }
+    }
+    p {
+        margin-bottom: 1.6rem;
+    }
+
+    ul,
+    ol {
+        li {
+            margin-left: 3.2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    ol li ol {
+        list-style: disc;
+        li {
+            margin-top: 1.2rem;
+
+            &:last-child {
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+
+    ul {
+        list-style: disc;
+    }
+}
+
+.terms {
+    .contact-info {
+        display: block;
+
+        &:not(:last-child) {
+            margin-bottom: 1.2rem;
+        }
+    }
+}
