@@ -3,7 +3,7 @@ let data = localStorage.getItem('cookie-closed');
 console.log('data of loc: ', data);
 // Checks if the data exists
 if (!data) {
-    // If it does not, insert adjacentSibling on the back to top btn
+    // If it does not exist, insert adjacentSibling on the back to top btn
     const html = `<div class="cookie-bar">
     <div class="cookie-bar__flex">
         <p class="cookie-bar__text">
