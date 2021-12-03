@@ -13,8 +13,10 @@ const backToTop = document.querySelector('.btn-back-to-top');
 // Footer date
 
 
-const dateClasses = [...document.querySelectorAll('.date')];
-for (const dClass of dateClasses) { dClass.textContent = year; }
+const dateClasses = document.querySelectorAll('.date');
+dateClasses.forEach(dateCl => {
+    dateCl.textContent = year;
+});
 
 // Sticky header
 
@@ -46,8 +48,6 @@ backToTop.addEventListener('click', function (e) {
 })
 
 
-// Add beforeunload event when the Form Input is not empty
-
 window.addEventListener('beforeunload', function (e) {
     e.preventDefault();
 
@@ -59,15 +59,15 @@ const addBUnloadEvent = function (inps) {
     inps.forEach(inp => {
         inp.addEventListener('input', function (e) {
             if (e.target.value !== '') {
-                window.addEventListener('beforeunload', function (e) {
-                    e.preventDefault();
-                    e.returnValue = 'Информацията ви няма да се запази';
+                window.addEventListener('beforeunload', function (ev) {
+                    ev.preventDefault();
+                    ev.returnValue = 'Информацията ви няма да се запази';
                 });
             }
         });
     });
 };
-// inputs[0].attr
+
 addBUnloadEvent(inputs);
 
 const heroBtns = document.querySelector('.hero__btns');
@@ -123,7 +123,5 @@ mobNavBtns.forEach(btn => {
         mobNav.classList.toggle('open');
         mobNavBtns.forEach(bt => bt.classList.toggle('hidden'));
     });
-
-    // Save Inputs to Local Storage
 
 });

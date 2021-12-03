@@ -1,10 +1,6 @@
 .benefits {
     padding: 0 4.8rem;
     &__flex {
-        // display: flex;
-        // gap: 6.4rem;
-        // align-items: center;
-        // justify-content: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 6.4rem;
@@ -14,26 +10,10 @@
         &:not(:last-child) {
             margin-bottom: 6.4rem;
         }
-
-        &:nth-child(2) {
-            // gap: 3rem;
-        }
     }
 
     &__text-box {
         flex: 0 0 40%;
-
-        &--2 {
-            // flex: 0 0 35%;
-        }
-    }
-
-    &__img-box {
-        // display: flex;
-        // justify-content: center;
-        &--2 {
-            // flex: 1;
-        }
     }
 
     &__desc {
@@ -46,9 +26,7 @@
     }
 
     &__img {
-        // height: 35rem;
         width: 100%;
-
         border-radius: 8px;
     }
 }

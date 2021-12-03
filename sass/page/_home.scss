@@ -1,13 +1,9 @@
 .section-hero {
-    // background-image: linear-gradient(to right bottom, rgba(34, 139, 230, .4), rgba(122, 185, 240, .7)), url(../../img/hw.jpg);
     background-color: var(--color-main-light-1);
-    // background-image: linear-gradient(#d3e8fa, #e9f3fd);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    // height: 80vh;
     padding: 4.8rem 4.8rem;
-    
 }
 
 .hero {
@@ -18,7 +14,7 @@
     &__btns {
         display: flex;
         gap: 1.6rem;
-    }   
+    }
 }
 
 .hero-desc {
@@ -29,48 +25,38 @@
 
 .text-box {
     flex: 0 0 52%;
-    animation: moveInLeft .8s;
+    animation: moveInLeft 0.8s;
 }
 
 .img-box {
-    animation: moveInRight .8s;
+    animation: moveInRight 0.8s;
 }
 
 .section-benefits {
     background-color: var(--color-grey-light-1);
-
 }
 
 .section-testimonials {
     background-color: var(--color-grey-light-1);
     padding: 9.8rem 0;
-
 }
 
 .section-cta {
     padding: 9.8rem 4.8rem 12.8rem;
 }
 
-
 .section-steps {
-    // background-color: var(--color-grey-light-1);
     padding: 6.4rem 0 12.8rem;
-
 }
-
 
 .section-stats {
     background-color: #d3e8fa;
-    // margin-bottom: 9.8rem;
-    // color: #fff;
 
     h2 {
         font-size: 3.7rem;
-        // color: inherit;
     }
 }
 
 section {
     padding: 6.4rem 0;
-
 }

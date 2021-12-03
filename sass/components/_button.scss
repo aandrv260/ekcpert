@@ -5,20 +5,19 @@
         display: inline-block;
         padding: 1.2rem 3.2rem;
         font-weight: 700;
-        // font-size: 1.8rem;
-        transition: all .3s;
+        transition: all 0.3s;
         border-radius: 7px;
         border: none;
         cursor: pointer;
     }
 
     &:hover {
-        box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+        transform: translateY(-0.3rem);
     }
 
     &:active {
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
         transform: translateY(0);
     }
 
@@ -27,7 +26,6 @@
         background-color: #64aeee;
         color: #fff;
         position: relative;
-        
     }
 
     &--full:hover,
@@ -45,7 +43,6 @@
     &--outline:active {
         background-color: var(--color-main-dark-2);
         color: #fff;
-
     }
 }
 

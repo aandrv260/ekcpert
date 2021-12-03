@@ -22,21 +22,12 @@
         }
     }
 
-    // .hero-desc {
-    //     font-size: 1.6rem;
-    // }
-
     html {
         font-size: 56.25%;
     }
 }
 
 @media (max-width: 67.5em) {
-    // .heading-primary {
-    //     font-size: 4.2rem;
-
-    // }
-
     html {
         font-size: 50%;
     }
@@ -51,10 +42,6 @@
 
     .cookie-bar {
         &__flex {
-            // flex-wrap: wrap;
-            // justify-content: space-between;
-            // justify-items: flex-end;
-            // gap: 1.6rem;
             display: grid;
             grid-template-columns: 2fr 1fr;
         }
@@ -119,16 +106,6 @@
     }
 
     .stats {
-        // &__flex {
-        //     display: grid;
-        //     grid-template-columns: repeat(2, 1fr);
-        //     row-gap: 3.2rem;
-        // }
-
-        // &__stat--3 {
-        //     grid-column: 1 / -1;
-        // }
-
         &__stat {
             flex-direction: column;
         }
@@ -207,7 +184,6 @@
         }
     }
 
-    // TODO: Watch the video about mobile navigation and do it here
     .header__nav-list {
         display: none;
     }
@@ -353,9 +329,6 @@
     .stats {
         &__flex {
             grid-template-columns: 1fr;
-            // justify-items: center
-
-            // TODO: Think of a fix of how this looks
         }
     }
 
@@ -394,14 +367,14 @@
 
     .mob-nav {
         &__icon {
-            height: 2.8rem;
-            width: 2.8rem;
+            height: 3.2rem;
+            width: 3.2rem;
         }
     }
 
     .btn-back-to-top {
-        height: 4.8rem;
-        width: 4.8rem;
+        height: 5.2rem;
+        width: 5.2rem;
         font-size: 2.8rem;
     }
 }

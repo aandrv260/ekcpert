@@ -3,29 +3,16 @@
     &__flex {
         display: flex;
         gap: 6.4rem;
-        
     }
 
-    &__col {
-        // box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-        // padding: 3.2rem;
-        // border-radius: 8px;
-
-    }
-    
     &__num {
         display: block;
-        margin-bottom: -.7rem;
+        margin-bottom: -0.7rem;
         font-size: 7.2rem;
-        // color: var(--color-grey-light-4); // CONSIDER: Before publishing the site see which one is better, the gradient or the gray color
         background-image: linear-gradient(to bottom, var(--color-main-light-2), var(--color-main-dark-2));
         -webkit-background-clip: text;
         background-clip: text;
         -moz-background-clip: text;
         color: transparent;
-    }
-
-    &__desc {
-        
     }
 }
