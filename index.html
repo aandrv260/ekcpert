@@ -318,21 +318,21 @@
                         Спестете
                         нерви
                         и бюрокрация.</p>
-                    <form action="#" class="form">
+                    <form action="#" class="form" netlify>
                         <div class="form__input-conts">
 
                             <div class="form__inp-cont">
-                                <label for="name" class="form__label">Име</label>
+                                <label name="име" for="name" class="form__label">Име</label>
                                 <input type="text" id="name" placeholder="Име" class="form__input" required>
                             </div>
 
                             <div class="form__inp-cont">
                                 <label for="email" class="form__label">Имейл</label>
-                                <input type="email" id="email" placeholder="Имейл" class="form__input" required>
+                                <input name="имейл" type="email" id="email" placeholder="Имейл" class="form__input" required>
                             </div>
                         </div>
 
-                        <textarea placeholder="Вашето съобщение" name="description" id="textarea" cols="50" rows="8"
+                        <textarea placeholder="Вашето съобщение" name="съобщение" id="textarea" cols="50" rows="8"
                             class="form__textarea" required></textarea>
 
                         <button class="btn btn-form">Изпращане</button>
